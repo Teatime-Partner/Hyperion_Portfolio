@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="survey.css" />
+  </head>
+  <body>
+    <div>
+      <h1 id="title">Crochet Club Registration</h1>
+      <p id="description">
+        Join us! Fill in the form to stay in touch and receive news from the crochet world!
+      </p>
+      <form id="survey-form">
+        <fieldset>
+          <label for="name" id="name-label"
+            >Name: <input id="name" type="text" placeholder="Your name" required
+          /></label>
+          <label for="email" id="email-label"
+            >Email address: <input id="email" type="email" placeholder="Your email" required
+          /></label>
+          <label for="number" id="number-label"
+            >How many years do you crochet for?
+            <input id="number" type="number" min="0" max="99" placeholder="0"
+          /></label>
+        </fieldset>
+        <fieldset>
+          <label for="dropdown"
+            >What is your crochet skill level?
+            <select id="dropdown">
+              <option value="">(select one)</option>
+              <option value="1">Beginner</option>
+              <option value="2">Intermediate</option>
+              <option value="3">Advanced</option>
+            </select></label
+          >
+          <label for="knit"
+            >Do you knit? <input id="knit" type="radio" name="knit" value="no" checked /> No
+            <input id="knit" type="radio" name="knit" value="yes" /> Yes</label
+          >
+          <label for="interest">Tick what news you'd like to receive:</label>
+          <label class="choice"><input type="checkbox" id="yarn" value="yarn" /> New yarns</label>
+          <label class="choice"
+            ><input type="checkbox" id="pattern" value="pattern" /> New free designs and
+            patterns</label
+          >
+          <label class="choice"
+            ><input type="checkbox" id="interest" value="discount" /> Yarn discounts</label
+          >
+          <label class="choice"
+            ><input type="checkbox" id="interest" value="review" /> Reviews</label
+          >
+          <label class="choice"
+            ><input type="checkbox" id="interest" value="fair" /> Crafting fairs</label
+          >
+          <label class="choice"
+            ><input type="checkbox" id="interest" value="event" /> Community events</label
+          >
+        </fieldset>
+        <fieldset>
+          <label for="comments">Additional comments: </label
+          ><textarea
+            id="comments"
+            name="comments"
+            rows="5"
+            cols="30"
+            placeholder="Do you have any comments or suggestions? Write them here!"
+          ></textarea>
+        </fieldset>
+        <button id="submit" type="submit" form="survey-form" formmethod="post" value="Submit">
+          Submit
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
